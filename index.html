@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RadAssist Pro</title>
+    <title>EVA Medical AI</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
         body { background: #080d19; color: #ffffff; padding: 12px; height: 100vh; display: flex; flex-direction: column; gap: 10px; user-select: none; overflow: hidden; }
@@ -48,14 +48,14 @@
     <div class="header">
         <img src="assets/icon128.png" class="logo-img" onerror="this.src='icon128.png'">
         <div class="title-container">
-            <h1>RadAssist Pro</h1>
-            <p>TU ASISTENTE RADIOLÓGICO INTELIGENTE</p>
+            <h1>EVA Medical AI</h1>
+            <p>TU COPILOTO RADIOLÓGICO INTELIGENTE</p>
         </div>
     </div>
 
     <div class="status-bar">
         <div class="dot"></div>
-        <span id="status-text">Dr. Silva: Asistente listo.</span>
+        <span id="status-text">EVA Medical AI lista.</span>
     </div>
 
     <div class="editor-container">
@@ -152,7 +152,6 @@
             textarea.focus();
         };
 
-        // CARGA COMPLETA DE 19.875 PLANTILLAS
         let BANCO_PLANTILLAS = [];
 
         async function cargarBasePlantillasPro() {
@@ -186,7 +185,7 @@
                         }
                     }
 
-                    statusText.innerText = `✅ ${BANCO_PLANTILLAS.length} prestaciones únicas | Dr. Silva listo.`;
+                    statusText.innerText = `✅ ${BANCO_PLANTILLAS.length} prestaciones únicas | EVA Medical AI lista.`;
                 }
             } catch(e) {
                 statusText.innerText = "⚠️ Modo local activo.";
@@ -246,7 +245,6 @@
             statusText.innerText = 'Plantilla cargada correctamente.';
         }
 
-        // GUARDAR PLANTILLA CON FORMULARIO DEDICADO
         document.getElementById('btn-guardar').onclick = () => {
             const txt = textarea.value.trim();
             if (!txt) {
@@ -272,10 +270,9 @@
             cerrarModal('modal-guardar-plantilla');
             document.getElementById('nuevo-titulo-plantilla').value = "";
             statusText.innerText = '💾 Plantilla guardada en su catálogo personal.';
-            setTimeout(() => { statusText.innerText = 'Dr. Silva: Asistente listo.'; }, 2500);
+            setTimeout(() => { statusText.innerText = 'EVA Medical AI lista.'; }, 2500);
         }
 
-        // DICTADO CONTINUO
         let recon = null;
         let dictando = false;
 
@@ -327,22 +324,45 @@
             try { recon.stop(); } catch(e){}
             btnDictado.classList.remove('active');
             lblDictado.innerText = 'Iniciar Dictado';
-            statusText.innerText = 'Dr. Silva: Asistente listo.';
+            statusText.innerText = 'EVA Medical AI lista.';
         }
 
-        // CORREGIR ESTILO
-        document.getElementById('btn-corregir').onclick = () => {
+        document.getElementById('btn-corregir').onclick = async () => {
             const txt = textarea.value.trim();
             if (!txt) return;
-            statusText.innerText = '🪄 Corrigiendo estilo...';
-            setTimeout(() => {
+            
+            statusText.innerText = '🪄 Corregiendo informe con EVA Medical AI...';
+            
+            try {
+                const resp = await fetch('http://127.0.0.1:3000/corregir-informe-ia', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ texto: txt })
+                });
+                
+                if (resp.ok) {
+                    const data = await resp.json();
+                    if (data.textoCorregido) {
+                        textarea.value = data.textoCorregido;
+                        actualizarStats();
+                        statusText.innerText = '✅ Texto corregido por EVA Medical AI.';
+                    } else {
+                        textarea.value = txt.toUpperCase();
+                        actualizarStats();
+                        statusText.innerText = '✅ Texto estandarizado.';
+                    }
+                } else {
+                    textarea.value = txt.toUpperCase();
+                    actualizarStats();
+                    statusText.innerText = '✅ Texto estandarizado.';
+                }
+            } catch(e) {
                 textarea.value = txt.toUpperCase();
                 actualizarStats();
                 statusText.innerText = '✅ Texto estandarizado.';
-            }, 400);
+            }
         };
 
-        // BOTÓN TRANSFERIR AL RIS/PACS (DALCA)
         document.getElementById('btn-transferir').onclick = async () => {
             const texto = textarea.value.trim();
             if (!texto) {
@@ -360,7 +380,7 @@
 
                 if (resp.ok) {
                     statusText.innerText = '✅ Informe encolado. Inyectando en Dalca...';
-                    setTimeout(() => { statusText.innerText = 'Dr. Silva: Asistente listo.'; }, 3000);
+                    setTimeout(() => { statusText.innerText = 'EVA Medical AI lista.'; }, 3000);
                 }
             } catch(e) {
                 statusText.innerText = '❌ Error al comunicar con Dalca';
