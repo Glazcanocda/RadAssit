@@ -1,7 +1,8 @@
-# RadAssist Pro • EVA Copilot IA 🚀
+# EVA Medical AI 🚀
+
 > Copiloto Radiológico Inteligente para Integración RIS/PACS (Dalca)
 
-**RadAssist Pro** es un asistente clínico avanzado diseñado para radiólogos, que integra un motor de Inteligencia Artificial (Llama 3.3 70B & Vision vía Groq) directamente sobre el visor RIS/PACS Dalca. Optimiza la redacción de pre-informes, realiza auditorías clínicas en tiempo real y genera resúmenes divulgativos para pacientes.
+**EVA Medical AI** es un asistente clínico avanzado diseñado para radiólogos, que integra un motor de Inteligencia Artificial (Llama 3.3 70B & Vision vía Groq) directamente sobre el visor RIS/PACS Dalca. Optimiza la redacción de pre-informes, realiza auditorías clínicas en tiempo real y genera resúmenes divulgativos para pacientes.
 
 ---
 
