@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "RadAssist Pro Copilot",
+  "name": "EVA Medical AI Copilot",
   "version": "2.3.4",
   "description": "Copiloto Radiológico Avanzado para Dalca PACS",
   "icons": {
@@ -14,7 +14,7 @@
       "48": "assets/icon128.png",
       "128": "assets/icon128.png"
     },
-    "default_title": "RadAssist Pro Copilot"
+    "default_title": "EVA Medical AI Copilot"
   },
   "permissions": [
     "activeTab",

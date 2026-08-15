@@ -1,4 +1,4 @@
-// main.js - Servidor Local RadAssist Pro (Corrección Estricta por Campo sin Pérdida de Texto)
+// main.js - Servidor Local EVA Medical AI
 
 const path = require('path');
 const fs = require('fs');
@@ -13,7 +13,7 @@ const Groq = require('groq-sdk');
 app.commandLine.appendSwitch('enable-speech-dispatcher');
 app.commandLine.appendSwitch('use-fake-ui-for-media-stream');
 
-// Se remueve la API Key estática para evitar bloqueos por parte del Secret Scanning de GitHub
+// Se lee la API Key desde el entorno (.env) para evitar exponer credenciales
 const GROQ_API_KEY = process.env.GROQ_API_KEY || "";
 
 const groq = new Groq({ apiKey: GROQ_API_KEY });
@@ -25,9 +25,9 @@ async function verificarConexionGroq() {
             model: "llama-3.3-70b-versatile",
             max_tokens: 5
         });
-        console.log("🟢 ¡CONEXIÓN EXITOSA CON GROQ IA! La API Key es 100% válida.");
+        console.log("🟢 ¡CONEXIÓN EXITOSA CON GROQ IA! EVA Medical AI está lista.");
     } catch (e) {
-        console.log("❌ ERROR DE AUTENTICACIÓN CON GROQ (401): La API Key es inválida.");
+        console.log("❌ ERROR DE AUTENTICACIÓN CON GROQ (401): Verifique la clave en el archivo .env");
     }
 }
 
@@ -113,7 +113,7 @@ serverApp.post('/auditar-informe-universal', async (req, res) => {
             return res.json({ tieneAlerta: false, alertas: [] });
         }
 
-        const promptAuditoria = `Eres EVA, auditora radiológica Senior. Evalúa el siguiente informe médico:
+        const promptAuditoria = `Eres EVA Medical AI, auditora radiológica Senior. Evalúa el siguiente informe médico:
 
 Título de la prestación solicitada: "${tituloEstudio || 'No especificado'}"
 Sexo del Paciente: "${sexoPaciente || 'No especificado'}"
@@ -123,7 +123,7 @@ Texto del Informe Redactado:
 TAREA DE AUDITORÍA:
 1. Incongruencia de Sexo: ¿Menciona próstata/testículos/vesículas seminales en Femenino, o ovarios/útero/mamografía en Masculino?
 2. Incongruencia Anatómica / Plantillazo: ¿Menciona zonas corporales totalmente ajenas al título del estudio?
-3. Examen Compuesto Incompleto: Si el título incluye varias regiones, ¿se omitió describir alguna de las regiones solicitadas?
+3. Examen Compuesto Incompleto: Si el título includes varias regiones, ¿se omitió describir alguna de las regiones solicitadas?
 4. Patología Crítica: ¿Se menciona neumotórax, TEP, ACV, fractura, sangrado o urgencia?
 
 RESPONDE EXCLUSIVAMENTE EN FORMATO JSON:
@@ -156,7 +156,7 @@ serverApp.post('/analizar-e-informar-ia', async (req, res) => {
         const nombreEstudio = (estudio || "ESTUDIO RADIOLÓGICO").toUpperCase();
         const ubicacionCorte = (corte || "CORTE ACTIVO 1/1").toUpperCase();
 
-        const promptClinicoGeneral = `Eres EVA, copiloto radiológico Senior.
+        const promptClinicoGeneral = `Eres EVA Medical AI, copiloto radiológico Senior.
 Analiza el examen: "${nombreEstudio}", Vista/Corte activo: "${ubicacionCorte}", Sexo del Paciente: "${sexo || 'M'}".
 
 REGLAS CRÍTICAS DE REDACCIÓN:
@@ -168,7 +168,7 @@ ANTECEDENTES:
 Evaluación radiológica de ${nombreEstudio.toLowerCase()}.
 
 HALLAZGOS:
-Estructuras preservadas de morfología habitual. Sin lesiones focales ni alteraciones agudas visibles.
+Estructuras preservadas de morfología habitual. Sin lesiones focales ni alterations agudas visibles.
 
 IMPRESIÓN:
 ${nombreEstudio}: Sin evidencia de lesiones agudas.`;
@@ -202,7 +202,7 @@ ${nombreEstudio}: Sin evidencia de lesiones agudas.`;
 });
 
 // =========================================================================
-// 🪄 CORREACTOR IA CONSERVADOR (RESPETA TODO EL TEXTO Y SOLO CORRIGE ORTOGRAFÍA)
+// 🪄 CORRECTOR IA CONSERVADOR (RESPETA TODO EL TEXTO Y SOLO CORRIGE ORTOGRAFÍA)
 // =========================================================================
 serverApp.post('/corregir-informe-ia', async (req, res) => {
     try {
@@ -214,7 +214,7 @@ serverApp.post('/corregir-informe-ia', async (req, res) => {
         const chatCompletion = await groq.chat.completions.create({
             messages: [{
                 role: "user",
-                content: `Eres EVA, correctora ortográfica y editorial médica.
+                content: `Eres EVA Medical AI, correctora ortográfica y editorial médica.
 Tu única tarea es corregir la ortografía, tildes y errores de dictado del siguiente texto radiológico.
 
 REGLAS ESTRÍCTAS:
@@ -280,7 +280,7 @@ serverApp.post('/traducir-para-paciente', async (req, res) => {
         const chatCompletion = await groq.chat.completions.create({
             messages: [{
                 role: "user",
-                content: `Eres EVA. Explica el siguiente informe radiológico médico en un lenguaje sencillo, claro, tranquilizador y fácil de entender para un paciente sin conocimientos médicos:
+                content: `Eres EVA Medical AI. Explica el siguiente informe radiológico médico en un lenguaje sencillo, claro, tranquilizador y fácil de entender para un paciente sin conocimientos médicos:
 
 "${informe}"
 
@@ -301,7 +301,7 @@ Responde en 2 o 3 frases amables sin usar tecnicismos complejos ni guiones.`
 
 const PORT = 3000;
 const server = serverApp.listen(PORT, () => {
-    console.log(`🚀 Servidor RadAssist Pro corriendo en http://127.0.0.1:${PORT}`);
+    console.log(`🚀 Servidor EVA Medical AI corriendo en http://127.0.0.1:${PORT}`);
 });
 
 server.keepAliveTimeout = 61000;
@@ -321,7 +321,7 @@ function createMainWindow() {
         autoHideMenuBar: true,
         alwaysOnTop: true,
         resizable: true,
-        title: "RadAssist Pro • EVA Copilot",
+        title: "EVA Medical AI",
         icon: ICON_PATH,
         webPreferences: {
             nodeIntegration: true,
@@ -348,7 +348,7 @@ function createSystemTray() {
         try {
             tray = new Tray(ICON_PATH);
             const contextMenu = Menu.buildFromTemplate([
-                { label: 'RadAssist Pro • EVA Copilot', enabled: false },
+                { label: 'EVA Medical AI • Copiloto Radiológico', enabled: false },
                 { type: 'separator' },
                 { 
                     label: 'Mostrar / Ocultar Ventana', 
@@ -359,7 +359,7 @@ function createSystemTray() {
                 { type: 'separator' },
                 { label: 'Salir', click: () => app.quit() }
             ]);
-            tray.setToolTip('RadAssist Pro');
+            tray.setToolTip('EVA Medical AI');
             tray.setContextMenu(contextMenu);
         } catch(e) {}
     }

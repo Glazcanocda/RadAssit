@@ -1,7 +1,7 @@
 {
-  "name": "radassist",
-  "version": "1.0.0",
-  "description": "",
+  "name": "eva-medical-ai",
+  "version": "2.5.8",
+  "description": "EVA Medical AI • Copiloto Radiológico Avanzado e Integración RIS/PACS Dalca",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
@@ -10,8 +10,15 @@
     "type": "git",
     "url": "git+https://github.com/Glazcanocda/RadAssit.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "radiology",
+    "ai",
+    "eva-medical-ai",
+    "pacs",
+    "dalca",
+    "electron"
+  ],
+  "author": "Dr. Gabriel Lazcano Cepeda",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
