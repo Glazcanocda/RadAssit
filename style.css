@@ -1,0 +1,314 @@
+/* ESTILOS RADASSIST PRO - TEMA OSCURO MÉDICO ULTRA COMPACTO (DOCK LATERAL) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: #0b0f19;
+    color: #f1f5f9;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container {
+    width: 100%;
+    height: 100vh;
+    padding: 6px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 6px !important;
+    background-color: #0f172a;
+}
+
+/* ENCABEZADO COMPACTO Y ELEGANTE */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #1e293b;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.header-title h1 {
+    font-size: 13px !important;
+    font-weight: 700;
+    color: #38bdf8;
+    white-space: nowrap;
+}
+
+.logo-icon {
+    font-size: 13px;
+}
+
+.btn-toggle-handsfree {
+    background-color: #1e293b;
+    color: #94a3b8;
+    border: 1px solid #334155;
+    padding: 3px 6px !important;
+    border-radius: 12px;
+    font-size: 9px !important;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-toggle-handsfree:hover {
+    background-color: #334155;
+    color: #f8fafc;
+}
+
+.btn-toggle-handsfree.active {
+    background-color: #16a34a;
+    color: #ffffff;
+    border-color: #22c55e;
+    box-shadow: 0 0 8px rgba(34, 197, 94, 0.4);
+}
+
+/* BARRA DE ESTADO COMPACTA */
+.status-bar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 10.5px;
+    color: #94a3b8;
+    background-color: #1e293b;
+    padding: 4px 6px;
+    border-radius: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #64748b;
+    flex-shrink: 0;
+}
+
+.status-dot.green {
+    background-color: #22c55e;
+    box-shadow: 0 0 6px #22c55e;
+}
+
+/* EDITOR DEL INFORME CON ALTURA OPTIMIZADA */
+.editor-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #090d16;
+    border: 1px solid #1e293b;
+    border-radius: 8px;
+    padding: 6px !important;
+    position: relative;
+    overflow: hidden;
+    min-height: 160px !important;
+}
+
+#editor {
+    flex: 1;
+    outline: none;
+    overflow-y: auto;
+    font-size: 12px !important;
+    line-height: 1.4;
+    color: #e2e8f0;
+    white-space: pre-wrap;
+}
+
+#editor[data-placeholder]:empty:before {
+    content: attr(data-placeholder);
+    color: #475569;
+}
+
+.editor-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4px;
+    border-top: 1px solid #1e293b;
+    font-size: 10px;
+    color: #64748b;
+}
+
+.btn-borrar {
+    background: none;
+    border: none;
+    color: #64748b;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.btn-borrar:hover {
+    color: #ef4444;
+}
+
+/* BOTONERA DE ACCIONES EN CUADRÍCULA (2x2) */
+.actions-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 6px !important;
+}
+
+.btn {
+    padding: 6px 2px !important;
+    border-radius: 6px;
+    font-size: 10px !important;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+    white-space: normal !important;
+    line-height: 1.2;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: white;
+}
+.btn-primary:hover { background-color: #1d4ed8; }
+
+.btn-primary.recording {
+    background-color: #dc2626 !important;
+    animation: pulse 1.5s infinite;
+}
+
+.btn-secondary {
+    background-color: #334155;
+    color: white;
+}
+.btn-secondary:hover { background-color: #475569; }
+
+.btn-accent {
+    background-color: #8b5cf6;
+    color: white;
+}
+.btn-accent:hover { background-color: #7c3aed; }
+
+.btn-success {
+    background-color: #16a34a;
+    color: white;
+}
+.btn-success:hover { background-color: #15803d; }
+
+.btn-danger {
+    background-color: #dc2626;
+    color: white;
+}
+
+/* BOTÓN DE TRANSFERENCIA AL RIS/PACS */
+.transfer-container {
+    margin-top: 1px;
+}
+
+.transfer-container .btn {
+    width: 100%;
+    padding: 8px !important;
+    font-size: 10px !important;
+    letter-spacing: 0.3px;
+    font-weight: 700;
+}
+
+/* DROPDOWN DE PLANTILLAS */
+.dropdown-wrapper {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 180px;
+    overflow-y: auto;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    z-index: 100;
+    margin-bottom: 6px;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-category {
+    padding: 4px 6px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #38bdf8;
+    background-color: #0f172a;
+}
+
+.dropdown-item {
+    padding: 6px 8px;
+    font-size: 10.5px;
+    color: #e2e8f0;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #334155;
+}
+
+/* MODALES AJUSTADOS */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    padding: 14px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.modal-card input, .modal-card select {
+    padding: 6px 8px;
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    color: white;
+    outline: none;
+    font-size: 10.5px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7); }
+    70% { box-shadow: 0 0 0 8px rgba(220, 38, 38, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+}

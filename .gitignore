@@ -1,0 +1,12 @@
+node_modules/
+whisper/*.bin
+temp_audio.wav
+temp_audio.wav.txt
+# Archivos de entorno con credenciales secretas
+.env
+.env.local
+.env.development
+
+# Dependencias y logs
+node_modules/
+npm-debug.log*

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadAssist Pro</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background: #080d19; color: #ffffff; padding: 12px; height: 100vh; display: flex; flex-direction: column; gap: 10px; user-select: none; overflow: hidden; }
+        
+        .header { display: flex; align-items: center; gap: 10px; border-bottom: 1px solid #1e293b; padding-bottom: 8px; }
+        .logo-img { width: 32px; height: 34px; object-fit: contain; }
+        .title-container h1 { font-size: 15px; font-weight: 800; color: #38bdf8; line-height: 1; }
+        .title-container p { font-size: 9px; color: #64748b; margin-top: 2px; }
+
+        .status-bar { background: rgba(15, 23, 42, 0.9); border: 1px solid #1e293b; padding: 6px 10px; border-radius: 6px; font-size: 10px; color: #38bdf8; display: flex; align-items: center; gap: 6px; }
+        .dot { width: 7px; height: 7px; border-radius: 50%; background: #10b981; box-shadow: 0 0 6px #10b981; }
+
+        .editor-container { flex: 1; display: flex; flex-direction: column; background: #020617; border: 1px solid #1e293b; border-radius: 8px; padding: 10px; position: relative; z-index: 1; }
+        textarea { flex: 1; background: transparent; border: none; color: #f8fafc; font-size: 11px; line-height: 1.4; resize: none; outline: none; user-select: text !important; pointer-events: auto !important; }
+        
+        .editor-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #1e293b; padding-top: 6px; font-size: 9px; color: #64748b; margin-top: 4px; }
+        .btn-clear { background: transparent; border: none; color: #ef4444; font-size: 9px; cursor: pointer; display: flex; align-items: center; gap: 3px; }
+
+        .grid-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; position: relative; z-index: 1; }
+        .btn-card { background: #0f172a; border: 1px solid #1e293b; color: #ffffff; padding: 8px 10px; border-radius: 8px; cursor: pointer; text-align: left; transition: all 0.2s; display: flex; flex-direction: column; justify-content: center; }
+        .btn-card:hover { border-color: #38bdf8; background: #1e293b; }
+        .btn-card.active { background: #ef4444 !important; border-color: #f87171 !important; color: white !important; }
+        .btn-card h3 { font-size: 11px; font-weight: 700; display: flex; align-items: center; gap: 5px; }
+        .btn-card p { font-size: 8px; color: #64748b; margin-top: 1px; }
+
+        .btn-card.purple { background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); border: none; }
+        .btn-card.purple:hover { opacity: 0.9; }
+
+        .btn-transfer { background: #10b981; color: #020617; border: none; padding: 10px; border-radius: 8px; font-weight: 800; font-size: 11px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25); position: relative; z-index: 1; }
+        .btn-transfer:hover { background: #34d399; }
+
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 9999; align-items: center; justify-content: center; padding: 12px; }
+        .modal-content { background: #0f172a; border: 1px solid #334155; border-radius: 10px; width: 100%; max-width: 340px; padding: 12px; display: flex; flex-direction: column; gap: 8px; max-height: 80vh; }
+        .input-box { background: #020617; border: 1px solid #334155; color: white; border-radius: 6px; padding: 6px 8px; font-size: 10px; outline: none; width: 100%; }
+        .templates-list { display: flex; flex-direction: column; gap: 6px; overflow-y: auto; max-height: 260px; padding-right: 4px; }
+        .modal-item { background: #020617; border: 1px solid #1e293b; padding: 8px; border-radius: 6px; cursor: pointer; font-size: 10px; font-weight: 700; color: #38bdf8; }
+        .modal-item:hover { border-color: #38bdf8; background: #1e293b; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="assets/icon128.png" class="logo-img" onerror="this.src='icon128.png'">
+        <div class="title-container">
+            <h1>RadAssist Pro</h1>
+            <p>TU ASISTENTE RADIOLÓGICO INTELIGENTE</p>
+        </div>
+    </div>
+
+    <div class="status-bar">
+        <div class="dot"></div>
+        <span id="status-text">Dr. Silva: Asistente listo.</span>
+    </div>
+
+    <div class="editor-container">
+        <textarea id="informe-texto" placeholder="Escriba o dicte su informe aquí..."></textarea>
+        <div class="editor-footer">
+            <button class="btn-clear" id="btn-borrar">🗑️ Borrar todo</button>
+            <span id="stats-text">🟢 Listo | 0 palabras | 0 caracteres</span>
+        </div>
+    </div>
+
+    <div class="grid-buttons">
+        <button class="btn-card" id="btn-dictado">
+            <h3>✏️ <span id="lbl-dictado">Iniciar Dictado</span></h3>
+            <p>Dictado por voz</p>
+        </button>
+
+        <button class="btn-card" id="btn-plantillas">
+            <h3>📄 Cargar Plantillas</h3>
+            <p>Plantillas prediseñadas</p>
+        </button>
+
+        <button class="btn-card" id="btn-guardar">
+            <h3>💾 Guardar Plantilla</h3>
+            <p>Clasificar y guardar</p>
+        </button>
+
+        <button class="btn-card purple" id="btn-corregir">
+            <h3>🪄 Corregir</h3>
+            <p>Revisar e IA</p>
+        </button>
+    </div>
+
+    <button class="btn-transfer" id="btn-transferir">
+        🔄 TRANSFERIR INFORME AL RIS/PACS
+    </button>
+
+    <!-- MODAL DE CARGA DE PLANTILLAS -->
+    <div class="modal" id="modal-plantillas">
+        <div class="modal-content">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h3 style="font-size: 11px; color: white;">Catálogo Único de Plantillas:</h3>
+                <button style="background: transparent; border: none; color: #94a3b8; cursor: pointer;" onclick="cerrarModal('modal-plantillas')">✕</button>
+            </div>
+            <input type="text" id="busqueda-plantilla" class="input-box" placeholder="🔍 Buscar por examen (ej: Mamografía, TAC, Pielotac...)" onkeyup="filtrarPlantillas()" />
+            
+            <div class="templates-list" id="contenedor-plantillas"></div>
+        </div>
+    </div>
+
+    <!-- MODAL GUARDAR PLANTILLA NUEVA CON NOMBRE Y CATEGORÍA -->
+    <div class="modal" id="modal-guardar-plantilla">
+        <div class="modal-content">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h3 style="font-size: 11px; color: white;">💾 Guardar Nueva Plantilla</h3>
+                <button style="background: transparent; border: none; color: #94a3b8; cursor: pointer;" onclick="cerrarModal('modal-guardar-plantilla')">✕</button>
+            </div>
+            
+            <label style="font-size: 9px; color: #38bdf8;">Título de la Plantilla / Prestación:</label>
+            <input type="text" id="nuevo-titulo-plantilla" class="input-box" placeholder="Ej: MAMOGRAFÍA BILATERAL (BI-RADS 2)" />
+
+            <label style="font-size: 9px; color: #38bdf8;">Modalidad / Categoría:</label>
+            <select id="nueva-categoria-plantilla" class="input-box" style="background: #020617; color: white;">
+                <option value="MAMOGRAFIA">🎀 Mamografía</option>
+                <option value="RADIOGRAFIA">🦴 Radiografía (RX)</option>
+                <option value="TAC">🫁 Tomografía (TAC)</option>
+                <option value="RESONANCIA">🧠 Resonancia (RM)</option>
+                <option value="ECOGRAFIA">🟢 Ecografía</option>
+            </select>
+
+            <button style="background: #10b981; border: none; color: #020617; padding: 8px; border-radius: 6px; font-weight: 800; font-size: 10px; cursor: pointer; margin-top: 6px;" onclick="confirmarGuardadoPlantilla()">
+                💾 Guardar en el Catálogo
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const textarea = document.getElementById('informe-texto');
+        const statusText = document.getElementById('status-text');
+        const statsText = document.getElementById('stats-text');
+        const btnDictado = document.getElementById('btn-dictado');
+        const lblDictado = document.getElementById('lbl-dictado');
+
+        textarea.addEventListener('input', actualizarStats);
+
+        function actualizarStats() {
+            const txt = textarea.value.trim();
+            const palabras = txt ? txt.split(/\s+/).length : 0;
+            statsText.innerText = `🟢 Listo | ${palabras} palabras | ${txt.length} caracteres`;
+        }
+
+        document.getElementById('btn-borrar').onclick = () => {
+            textarea.value = '';
+            actualizarStats();
+            textarea.focus();
+        };
+
+        // CARGA COMPLETA DE 19.875 PLANTILLAS
+        let BANCO_PLANTILLAS = [];
+
+        async function cargarBasePlantillasPro() {
+            try {
+                statusText.innerText = "⏳ Cargando catálogo de plantillas...";
+                const resp = await fetch('http://127.0.0.1:3000/obtener-plantillas-base');
+                if (resp.ok) {
+                    const data = await resp.json();
+                    let listaBruta = [];
+
+                    if (Array.isArray(data)) {
+                        listaBruta = data.map(item => ({
+                            titulo: (item.titulo || item.title || item.nombre || item.estudio || "Plantilla Médica").trim(),
+                            texto: item.texto || item.contenido || item.report || item.template || ""
+                        }));
+                    } else if (typeof data === 'object') {
+                        listaBruta = Object.keys(data).map(key => ({
+                            titulo: key.trim(),
+                            texto: typeof data[key] === 'string' ? data[key] : (data[key].texto || data[key].contenido || "")
+                        }));
+                    }
+
+                    const titulosVistos = new Set();
+                    BANCO_PLANTILLAS = [];
+
+                    for (let item of listaBruta) {
+                        const clave = item.titulo.toUpperCase();
+                        if (!titulosVistos.has(clave) && item.texto.length > 5) {
+                            titulosVistos.add(clave);
+                            BANCO_PLANTILLAS.push(item);
+                        }
+                    }
+
+                    statusText.innerText = `✅ ${BANCO_PLANTILLAS.length} prestaciones únicas | Dr. Silva listo.`;
+                }
+            } catch(e) {
+                statusText.innerText = "⚠️ Modo local activo.";
+            }
+        }
+
+        cargarBasePlantillasPro();
+
+        function renderizarPlantillas(lista) {
+            const cont = document.getElementById('contenedor-plantillas');
+            cont.innerHTML = '';
+            const MUESTRA = lista.slice(0, 50);
+
+            MUESTRA.forEach(p => {
+                const div = document.createElement('div');
+                div.className = 'modal-item';
+                div.innerText = p.titulo;
+                div.onclick = () => seleccionarPlantilla(p.texto);
+                cont.appendChild(div);
+            });
+
+            if (lista.length > 50) {
+                const info = document.createElement('div');
+                info.style.cssText = "font-size: 8px; color: #64748b; text-align: center; padding: 4px;";
+                info.innerText = `Mostrando 50 de ${lista.length} prestaciones. Escriba en el buscador para filtrar.`;
+                cont.appendChild(info);
+            }
+        }
+
+        function filtrarPlantillas() {
+            const q = document.getElementById('busqueda-plantilla').value.toUpperCase();
+            if (!q) {
+                renderizarPlantillas(BANCO_PLANTILLAS);
+                return;
+            }
+            const filtradas = BANCO_PLANTILLAS.filter(p => 
+                (p.titulo && p.titulo.toUpperCase().includes(q)) || 
+                (p.texto && p.texto.toUpperCase().includes(q))
+            );
+            renderizarPlantillas(filtradas);
+        }
+
+        document.getElementById('btn-plantillas').onclick = () => {
+            renderizarPlantillas(BANCO_PLANTILLAS);
+            document.getElementById('modal-plantillas').style.display = 'flex';
+        };
+
+        function cerrarModal(idModal) {
+            document.getElementById(idModal).style.display = 'none';
+        }
+
+        function seleccionarPlantilla(texto) {
+            cerrarModal('modal-plantillas');
+            textarea.value = texto;
+            actualizarStats();
+            textarea.focus();
+            statusText.innerText = 'Plantilla cargada correctamente.';
+        }
+
+        // GUARDAR PLANTILLA CON FORMULARIO DEDICADO
+        document.getElementById('btn-guardar').onclick = () => {
+            const txt = textarea.value.trim();
+            if (!txt) {
+                alert("Escriba o pegue un informe antes de guardar como plantilla.");
+                return;
+            }
+            document.getElementById('modal-guardar-plantilla').style.display = 'flex';
+        };
+
+        function confirmarGuardadoPlantilla() {
+            const txt = textarea.value.trim();
+            const titulo = document.getElementById('nuevo-titulo-plantilla').value.trim();
+            const cat = document.getElementById('nueva-categoria-plantilla').value;
+
+            if (!titulo) {
+                alert("Ingrese un nombre o título para identificar la plantilla.");
+                return;
+            }
+
+            const nuevaObj = { titulo: `⭐ [${cat}] ${titulo}`, texto: txt };
+            BANCO_PLANTILLAS.unshift(nuevaObj);
+
+            cerrarModal('modal-guardar-plantilla');
+            document.getElementById('nuevo-titulo-plantilla').value = "";
+            statusText.innerText = '💾 Plantilla guardada en su catálogo personal.';
+            setTimeout(() => { statusText.innerText = 'Dr. Silva: Asistente listo.'; }, 2500);
+        }
+
+        // DICTADO CONTINUO
+        let recon = null;
+        let dictando = false;
+
+        function inicializarDictadoNativo() {
+            if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+                const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+                recon = new SpeechRecognition();
+                recon.continuous = true;
+                recon.interimResults = false;
+                recon.lang = 'es-CL';
+
+                recon.onresult = (event) => {
+                    let transcrito = '';
+                    for (let i = event.resultIndex; i < event.results.length; ++i) {
+                        transcrito += event.results[i][0].transcript;
+                    }
+                    if (transcrito) {
+                        textarea.value += (textarea.value ? ' ' : '') + transcrito;
+                        actualizarStats();
+                    }
+                };
+
+                recon.onerror = () => { if (dictando) detenerDictado(); };
+                recon.onend = () => { if (dictando) try { recon.start(); } catch(e){} };
+            }
+        }
+
+        inicializarDictadoNativo();
+
+        btnDictado.onclick = () => {
+            if (!recon) {
+                alert("Dictado no soportado.");
+                return;
+            }
+
+            if (!dictando) {
+                dictando = true;
+                try { recon.start(); } catch(e){}
+                btnDictado.classList.add('active');
+                lblDictado.innerText = 'Detener Dictado';
+                statusText.innerText = '🎙️ Dictando en vivo... Hable al micrófono.';
+            } else {
+                detenerDictado();
+            }
+        };
+
+        function detenerDictado() {
+            dictando = false;
+            try { recon.stop(); } catch(e){}
+            btnDictado.classList.remove('active');
+            lblDictado.innerText = 'Iniciar Dictado';
+            statusText.innerText = 'Dr. Silva: Asistente listo.';
+        }
+
+        // CORREGIR ESTILO
+        document.getElementById('btn-corregir').onclick = () => {
+            const txt = textarea.value.trim();
+            if (!txt) return;
+            statusText.innerText = '🪄 Corrigiendo estilo...';
+            setTimeout(() => {
+                textarea.value = txt.toUpperCase();
+                actualizarStats();
+                statusText.innerText = '✅ Texto estandarizado.';
+            }, 400);
+        };
+
+        // BOTÓN TRANSFERIR AL RIS/PACS (DALCA)
+        document.getElementById('btn-transferir').onclick = async () => {
+            const texto = textarea.value.trim();
+            if (!texto) {
+                alert("Escriba o dicte un informe antes de transferir.");
+                return;
+            }
+
+            try {
+                statusText.innerText = '⏳ Enviando a Dalca...';
+                const resp = await fetch('http://127.0.0.1:3000/solicitar-transferencia', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ texto: texto })
+                });
+
+                if (resp.ok) {
+                    statusText.innerText = '✅ Informe encolado. Inyectando en Dalca...';
+                    setTimeout(() => { statusText.innerText = 'Dr. Silva: Asistente listo.'; }, 3000);
+                }
+            } catch(e) {
+                statusText.innerText = '❌ Error al comunicar con Dalca';
+            }
+        };
+    </script>
+</body>
+</html>

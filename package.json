@@ -1,0 +1,38 @@
+{
+  "name": "radassist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Glazcanocda/RadAssit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Glazcanocda/RadAssit/issues"
+  },
+  "homepage": "https://github.com/Glazcanocda/RadAssit#readme",
+  "devDependencies": {
+    "electron": "^43.2.0"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.111.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "groq-sdk": "^1.5.0",
+    "node-machine-id": "^1.1.12",
+    "node-wav": "^0.0.2",
+    "nodemailer": "^9.0.5",
+    "onnxruntime-node": "^1.27.0",
+    "sharp": "^0.35.3",
+    "wavefile": "^11.0.0",
+    "ws": "^8.21.1"
+  }
+}

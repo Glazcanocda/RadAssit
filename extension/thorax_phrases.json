@@ -1,0 +1,176 @@
+{
+"sin hallazgos": [
+"No se identifican hallazgos patológicos significativos.",
+"Estudio dentro de límites normales.",
+"No se observan alteraciones radiológicas relevantes.",
+"Sin evidencia de patología torácica aguda."
+],
+
+"nodulo pulmonar": [
+"Nódulo pulmonar sólido de contornos definidos.",
+"Se recomienda seguimiento según criterios de Fleischner.",
+"Correlacionar con antecedentes oncológicos.",
+"Hallazgo inespecífico que requiere control evolutivo."
+],
+
+"masa pulmonar": [
+"Masa pulmonar de características indeterminadas.",
+"Lesión expansiva que requiere estudio complementario.",
+"Correlacionar con antecedentes clínicos.",
+"Se recomienda caracterización mediante tomografía contrastada."
+],
+
+"consolidacion": [
+"Área de consolidación parenquimatosa.",
+"Hallazgos compatibles con proceso infeccioso.",
+"Correlacionar con parámetros inflamatorios.",
+"Compatible con neumonía en contexto clínico adecuado."
+],
+
+"neumonia": [
+"Hallazgos compatibles con neumonía.",
+"Correlacionar con clínica respiratoria.",
+"Se recomienda seguimiento radiológico posterior.",
+"Compatible con proceso infeccioso pulmonar."
+],
+
+"atelectasia": [
+"Cambios atelectásicos subsegmentarios.",
+"Atelectasia laminar basal.",
+"Hallazgo inespecífico.",
+"Cambios atelectásicos residuales."
+],
+
+"derrame pleural": [
+"Derrame pleural de pequeña cuantía.",
+"Derrame pleural moderado.",
+"Colección líquida pleural.",
+"Correlacionar con contexto clínico."
+],
+
+"neumotorax": [
+"Se identifica neumotórax.",
+"Valorar cuantificación clínica.",
+"Hallazgo potencialmente significativo.",
+"Se recomienda evaluación médica inmediata."
+],
+
+"enfisema": [
+"Cambios enfisematosos pulmonares.",
+"Hiperinsuflación pulmonar.",
+"Compatible con EPOC.",
+"Cambios enfisematosos difusos."
+],
+
+"epoc": [
+"Cambios compatibles con enfermedad pulmonar obstructiva crónica.",
+"Hiperinsuflación pulmonar.",
+"Aumento del diámetro anteroposterior torácico.",
+"Compatible con EPOC."
+],
+
+"fibrosis pulmonar": [
+"Cambios fibróticos pulmonares.",
+"Patrón intersticial crónico.",
+"Compatible con fibrosis pulmonar.",
+"Correlacionar con antecedentes clínicos."
+],
+
+"bronquiectasias": [
+"Bronquiectasias de distribución segmentaria.",
+"Cambios bronquiectásicos crónicos.",
+"Dilatación bronquial irreversible.",
+"Hallazgo compatible con bronquiectasias."
+],
+
+"edema pulmonar": [
+"Hallazgos compatibles con edema pulmonar.",
+"Congestión vascular pulmonar.",
+"Correlacionar con insuficiencia cardíaca.",
+"Patrón compatible con edema cardiogénico."
+],
+
+"adenopatia mediastinica": [
+"Adenopatías mediastínicas.",
+"Ganglios mediastínicos aumentados de tamaño.",
+"Correlacionar con antecedentes clínicos.",
+"Hallazgo inespecífico."
+],
+
+"embolia pulmonar": [
+"Hallazgos sugerentes de tromboembolismo pulmonar.",
+"Correlación clínica inmediata.",
+"Requiere evaluación médica urgente.",
+"Compatible con embolia pulmonar."
+],
+
+"vidrio esmerilado": [
+"Opacidades en vidrio esmerilado.",
+"Hallazgo inespecífico.",
+"Correlacionar con contexto clínico.",
+"Patrón de ocupación alveolo-intersticial."
+],
+
+"opacidad": [
+"Opacidad pulmonar de características inespecíficas.",
+"Hallazgo que requiere correlación clínica.",
+"Compatible con proceso inflamatorio.",
+"Valorar control evolutivo."
+],
+
+"cavitacion": [
+"Lesión cavitada.",
+"Cavitación pulmonar.",
+"Correlacionar con antecedentes infecciosos.",
+"Requiere estudio complementario."
+],
+
+"derrame pericardico": [
+"Derrame pericárdico.",
+"Colección líquida pericárdica.",
+"Correlacionar con evaluación cardiológica.",
+"Hallazgo significativo."
+],
+
+"cardiomegalia": [
+"Aumento de la silueta cardíaca.",
+"Cardiomegalia.",
+"Correlacionar con antecedentes cardiovasculares.",
+"Hallazgo compatible con cardiomegalia."
+],
+
+"calcificacion": [
+"Calcificaciones de aspecto benigno.",
+"Hallazgo incidental.",
+"Calcificaciones residuales.",
+"Sin características agresivas."
+],
+
+"engrosamiento pleural": [
+"Engrosamiento pleural.",
+"Cambios pleurales crónicos.",
+"Hallazgo inespecífico.",
+"Correlacionar con antecedentes ocupacionales."
+],
+
+"placas pleurales": [
+"Placas pleurales calcificadas.",
+"Cambios compatibles con exposición previa al asbesto.",
+"Hallazgo crónico.",
+"Sin evidencia de actividad aguda."
+],
+
+"metastasis pulmonar": [
+"Lesiones pulmonares secundarias.",
+"Hallazgos compatibles con enfermedad metastásica.",
+"Correlacionar con antecedente oncológico.",
+"Requiere estudio complementario."
+],
+
+"hemotorax": [
+"Colección pleural compatible con hemotórax.",
+"Correlacionar con antecedente traumático.",
+"Hallazgo potencialmente significativo.",
+"Evaluación clínica recomendada."
+]
+}

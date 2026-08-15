@@ -1,0 +1,91 @@
+{
+  "grammar_rules": {
+
+    "capitalize_first_letter": true,
+    "capitalize_after_period": true,
+    "capitalize_after_colon": false,
+    "capitalize_after_linebreak": true,
+
+    "fix_duplicate_words": true,
+    "fix_repeated_letters": false,
+
+    "fix_double_spaces": true,
+    "trim_spaces": true,
+    "remove_space_before_comma": true,
+    "remove_space_before_period": true,
+    "remove_space_before_colon": true,
+    "remove_space_before_semicolon": true,
+    "remove_space_before_question": true,
+    "remove_space_before_exclamation": true,
+
+    "ensure_space_after_comma": true,
+    "ensure_space_after_period": true,
+    "ensure_space_after_colon": true,
+    "ensure_space_after_semicolon": true,
+
+    "fix_duplicate_commas": true,
+    "fix_duplicate_periods": true,
+    "fix_duplicate_semicolons": true,
+    "fix_duplicate_colons": true,
+
+    "normalize_ellipsis": true,
+    "ellipsis_style": "...",
+
+    "remove_duplicate_punctuation": true,
+
+    "normalize_quotes": true,
+    "normalize_apostrophes": true,
+
+    "fix_mixed_case_words": false,
+
+    "fix_common_medical_spacing": true,
+
+    "remove_space_inside_parentheses": true,
+    "ensure_space_outside_parentheses": true,
+
+    "remove_space_inside_brackets": true,
+    "ensure_space_outside_brackets": true,
+
+    "normalize_hyphen_spacing": true,
+
+    "ensure_sentence_ending_period": true,
+
+    "normalize_unicode": true,
+
+    "preserve_uppercase_words": true,
+    "preserve_title_case": true,
+
+    "smart_case_detection": true,
+
+    "detect_accent_errors": true,
+
+    "fix_spanish_inverted_symbols": false,
+
+    "fix_number_spacing": true,
+
+    "medical_mode": true,
+
+    "medical_rules": {
+
+      "normalize_tirads": true,
+      "normalize_birads": true,
+      "normalize_pirads": true,
+
+      "normalize_measurements": true,
+
+      "measurement_spacing": true,
+
+      "normalize_units": true,
+
+      "fix_duplicate_findings": true,
+
+      "remove_empty_sections": false,
+
+      "normalize_clinical_sentences": true,
+
+      "auto_finish_findings": true,
+
+      "capitalize_organs": false
+    }
+  }
+}

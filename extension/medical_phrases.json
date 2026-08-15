@@ -1,0 +1,225 @@
+{
+  "sin hallazgos": [
+    "No se identifican hallazgos patológicos significativos.",
+    "Estudio dentro de límites normales.",
+    "No se observan alteraciones radiológicas relevantes.",
+    "Sin evidencia de patología aguda."
+  ],
+
+  "normal": [
+    "No se identifican alteraciones significativas.",
+    "Hallazgos dentro de parámetros normales.",
+    "Sin evidencia de proceso patológico activo."
+  ],
+
+  "lesion": [
+    "Lesión focal de características inespecíficas.",
+    "Hallazgo que requiere correlación clínica.",
+    "Se recomienda seguimiento según contexto clínico.",
+    "Lesión susceptible de caracterización complementaria."
+  ],
+
+  "masa": [
+    "Masa de aspecto inespecífico.",
+    "Hallazgo que requiere estudio complementario.",
+    "Se recomienda correlación clínica e imagenológica."
+  ],
+
+  "nodulo": [
+    "Nódulo de características inespecíficas.",
+    "Se recomienda seguimiento imagenológico.",
+    "Correlacionar con antecedentes clínicos."
+  ],
+
+  "fractura": [
+    "Se identifica solución de continuidad ósea compatible con fractura.",
+    "Hallazgos concordantes con fractura aguda.",
+    "Correlacionar con sitio de dolor clínico."
+  ],
+
+  "derrame": [
+    "Presencia de colección líquida.",
+    "Derrame de cuantía leve.",
+    "Derrame de cuantía moderada.",
+    "Derrame de cuantía significativa."
+  ],
+
+  "consolidacion": [
+    "Hallazgos sugerentes de proceso infeccioso.",
+    "Correlacionar con parámetros inflamatorios.",
+    "Compatible con consolidación pulmonar."
+  ],
+
+  "atelectasia": [
+    "Cambios atelectásicos subsegmentarios.",
+    "Atelectasia laminar residual.",
+    "Hallazgo de carácter inespecífico."
+  ],
+
+  "neumonia": [
+    "Hallazgos compatibles con proceso infeccioso pulmonar.",
+    "Correlacionar con clínica respiratoria.",
+    "Compatible con neumonía."
+  ],
+
+  "neumotorax": [
+    "Se identifica neumotórax.",
+    "Valorar cuantificación clínica.",
+    "Hallazgo potencialmente significativo."
+  ],
+
+  "edema pulmonar": [
+    "Hallazgos compatibles con congestión pulmonar.",
+    "Compatible con edema pulmonar.",
+    "Correlacionar con insuficiencia cardíaca."
+  ],
+
+  "embolia pulmonar": [
+    "Hallazgos sugerentes de tromboembolismo pulmonar.",
+    "Requiere evaluación clínica inmediata."
+  ],
+
+  "aneurisma": [
+    "Dilatación aneurismática.",
+    "Se recomienda control imagenológico.",
+    "Correlacionar con antecedentes vasculares."
+  ],
+
+  "hemorragia": [
+    "Hallazgos compatibles con hemorragia.",
+    "Evaluación urgente recomendada.",
+    "Correlación clínica inmediata."
+  ],
+
+  "isquemia": [
+    "Cambios sugerentes de fenómeno isquémico.",
+    "Correlacionar con contexto clínico."
+  ],
+
+  "infarto": [
+    "Hallazgos compatibles con infarto.",
+    "Correlación clínica inmediata."
+  ],
+
+  "colelitiasis": [
+    "Litiasis vesicular.",
+    "Sin signos evidentes de colecistitis.",
+    "Correlacionar con sintomatología."
+  ],
+
+  "colecistitis": [
+    "Hallazgos sugerentes de colecistitis.",
+    "Correlacionar con parámetros inflamatorios."
+  ],
+
+  "hidronefrosis": [
+    "Dilatación pielocalicial.",
+    "Compatible con hidronefrosis.",
+    "Valorar etiología obstructiva."
+  ],
+
+  "litiasis renal": [
+    "Litiasis urinaria.",
+    "Correlacionar con clínica de cólico renal."
+  ],
+
+  "quiste": [
+    "Lesión quística de aspecto benigno.",
+    "Sin características sospechosas."
+  ],
+
+  "hepatomegalia": [
+    "Aumento del tamaño hepático.",
+    "Correlacionar con pruebas hepáticas."
+  ],
+
+  "esteatosis": [
+    "Cambios compatibles con infiltración grasa hepática.",
+    "Compatible con esteatosis hepática."
+  ],
+
+  "cirrosis": [
+    "Cambios morfológicos compatibles con hepatopatía crónica.",
+    "Hallazgos sugerentes de cirrosis."
+  ],
+
+  "apendicitis": [
+    "Hallazgos compatibles con apendicitis aguda.",
+    "Correlación clínica inmediata."
+  ],
+
+  "diverticulitis": [
+    "Hallazgos compatibles con diverticulitis.",
+    "Correlacionar con cuadro clínico."
+  ],
+
+  "obstruccion intestinal": [
+    "Hallazgos compatibles con obstrucción intestinal.",
+    "Valorar conducta quirúrgica."
+  ],
+
+  "hernia": [
+    "Defecto parietal compatible con hernia.",
+    "Correlacionar con examen físico."
+  ],
+
+  "metastasis": [
+    "Lesiones secundarias sospechosas.",
+    "Compatible con enfermedad metastásica."
+  ],
+
+  "adenopatia": [
+    "Adenopatías de significado inespecífico.",
+    "Correlacionar con antecedentes clínicos."
+  ],
+
+  "tumor": [
+    "Lesión expansiva.",
+    "Se recomienda estudio complementario."
+  ],
+
+  "calcificacion": [
+    "Calcificaciones de aspecto benigno.",
+    "Hallazgo incidental."
+  ],
+
+  "osteofito": [
+    "Cambios degenerativos.",
+    "Osteofitos marginales."
+  ],
+
+  "artrosis": [
+    "Cambios degenerativos articulares.",
+    "Compatible con artrosis."
+  ],
+
+  "hernia discal": [
+    "Protrusión discal.",
+    "Correlacionar con clínica radicular."
+  ],
+
+  "estenosis": [
+    "Estrechamiento significativo.",
+    "Valorar repercusión funcional."
+  ],
+
+  "rotura": [
+    "Discontinuidad compatible con rotura.",
+    "Correlacionar con clínica."
+  ],
+
+  "tendinopatia": [
+    "Cambios degenerativos tendinosos.",
+    "Compatible con tendinopatía."
+  ],
+
+  "derrame articular": [
+    "Presencia de líquido articular.",
+    "Derrame articular leve."
+  ],
+
+  "sinovitis": [
+    "Cambios inflamatorios sinoviales.",
+    "Compatible con sinovitis."
+  ]
+}

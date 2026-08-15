@@ -1,0 +1,46 @@
+/* 1. ANULAR DISEÑO VIEJO: Busca elementos con esos colores y los oculta */
+div[style*="background:#0f4c81"], 
+div[style*="background: #0f4c81"] {
+    display: none !important;
+}
+
+/* 2. DISEÑO NUEVO */
+#radassist-pro-v2 {
+    position: fixed !important;
+    right: 20px !important;
+    bottom: 90px !important;
+    width: 350px !important;
+    background: #ffffff !important;
+    border-radius: 16px !important;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2) !important;
+    z-index: 9999999 !important; /* Más alto que cualquier otro */
+    border: 1px solid #e2e8f0 !important;
+    font-family: sans-serif !important;
+    display: block !important;
+}
+
+.ra-header {
+    background: #0f4c81 !important;
+    color: white !important;
+    padding: 15px !important;
+    border-radius: 16px 16px 0 0 !important;
+    font-weight: bold !important;
+}
+
+.ra-body { padding: 15px !important; }
+
+.ra-stat { margin-bottom: 5px !important; font-size: 14px !important; color: #475569 !important; }
+
+.ra-btn {
+    width: 100% !important;
+    padding: 12px !important;
+    margin-bottom: 8px !important;
+    background: #f1f5f9 !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    font-weight: 600 !important;
+    color: #1e293b !important;
+}
+
+.ra-btn:hover { background: #e2e8f0 !important; }

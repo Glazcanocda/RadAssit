@@ -1,0 +1,372 @@
+[
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Incongruencia anatómica: El título del estudio no especifica la zona a evaluar, pero el informe redactado se enfoca en la próstata, lo que sugiere una falta de congruencia con el título del estudio."
+    ],
+    "fecha": "2026-08-08T02:13:23.070Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Incongruencia anatómica: El título del estudio no especifica la zona a evaluar, pero el informe redactado solo menciona la próstata, lo que puede no ser congruente con el propósito del estudio."
+    ],
+    "fecha": "2026-08-08T02:14:47.151Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Incongruencia anatómica: El título del estudio no especifica la zona a evaluar, pero el informe redactado se enfoca en la próstata, lo que sugiere una falta de congruencia con el título del estudio."
+    ],
+    "fecha": "2026-08-08T02:15:01.156Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Incongruencia anatómica: El título del estudio no especifica la zona a evaluar, pero el informe redactado se enfoca en la próstata, lo que sugiere una falta de congruencia con el título del estudio."
+    ],
+    "fecha": "2026-08-08T02:15:39.799Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Incongruencia anatómica: El título del estudio no especifica la zona a evaluar, pero el informe redactado se enfoca en la próstata, lo que sugiere una falta de claridad en el objetivo del estudio."
+    ],
+    "fecha": "2026-08-08T02:18:20.403Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Incongruencia anatómica: El título del estudio no especifica la zona a evaluar, pero el informe redactado se enfoca en la próstata, lo que sugiere una falta de claridad en el objetivo del estudio."
+    ],
+    "fecha": "2026-08-08T02:21:09.718Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio requiere evaluar la zona de la cadera, pero el informe redactado se enfoca en la próstata",
+      "Alerta de omisión de regiones requeridas: El título del estudio requiere evaluar la cadera, pero el informe redactado no menciona esta zona"
+    ],
+    "fecha": "2026-08-08T02:25:40.498Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio requiere evaluar la zona de la cadera, pero el informe redactado se enfoca en la próstata",
+      "Alerta de omisión de regiones requeridas: El título del estudio requiere evaluar la cadera, pero el informe redactado no menciona esta zona"
+    ],
+    "fecha": "2026-08-08T02:28:24.105Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio requiere evaluar la zona de la cadera, pero el informe redactado se enfoca en la próstata.",
+      "Alerta de omisión de regiones requeridas: El título del estudio requiere evaluar la cadera, pero el informe redactado no menciona esta zona.",
+      "Alerta de congruencia de sexo: El paciente es masculino, pero el informe redactado menciona la próstata, lo cual es compatible con el sexo del paciente, por lo que no es un error en este caso."
+    ],
+    "fecha": "2026-08-08T02:31:49.758Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio requiere evaluar la zona de la cadera, pero el informe redactado se enfoca en la próstata.",
+      "Alerta de omisión de regiones requeridas: El título del estudio requiere evaluar la cadera, pero el informe redactado no menciona esta zona.",
+      "Alerta de congruencia de sexo: El paciente es masculino, pero el informe redactado menciona la próstata, lo cual es compatible con el sexo del paciente, por lo que no es un error en este caso."
+    ],
+    "fecha": "2026-08-08T02:31:49.764Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio no especifica una zona anatómica, pero el informe redactado se enfoca en la próstata, lo que puede no ser relevante para el diagnóstico solicitado"
+    ],
+    "fecha": "2026-08-08T02:33:58.972Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio requiere evaluar la zona de la cadera, pero el informe redactado se enfoca en la próstata",
+      "Alerta de omisión de regiones requeridas: El título del estudio requiere evaluar la cadera, pero el informe redactado no menciona esta zona"
+    ],
+    "fecha": "2026-08-08T02:33:59.088Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio no especifica una zona anatómica, pero el informe redactado se enfoca en la próstata, lo que puede no ser relevante para el diagnóstico solicitado"
+    ],
+    "fecha": "2026-08-08T02:34:00.354Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio requiere evaluar la zona de la cadera, pero el informe redactado se enfoca en la próstata.",
+      "Alerta de omisión de regiones requeridas: El título del estudio requiere evaluar la cadera, pero el informe redactado no menciona esta zona.",
+      "Alerta de congruencia de sexo: El paciente es masculino, pero el informe redactado menciona una zona anatómica (cadera) que es compatible con el sexo, sin embargo, la próstata es un órgano masculino, por lo que en este caso no hay incongruencia de sexo."
+    ],
+    "fecha": "2026-08-08T02:34:00.932Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio no especifica una zona anatómica, pero el informe redactado se enfoca en la próstata, lo que podría ser incompatible con el título genérico."
+    ],
+    "fecha": "2026-08-08T02:34:08.352Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio requiere evaluar la zona de la cadera, pero el informe redactado se enfoca en la próstata",
+      "Alerta de omisión de regiones requeridas: El título del estudio requiere evaluar la cadera, pero el informe redactado no menciona esta zona"
+    ],
+    "fecha": "2026-08-08T02:34:08.732Z"
+  },
+  {
+    "estudio": "PRUEBA PRUEBA NO TOMAR EN CUENTA\n\n11.111.111-1\n\nVer más\n\nAPSORAD – CM APSORAD\n\nINGRESO\n\n07/08/2026\n\n11:59\n\nENTREGA\n\n11/08/2026\n\n17:00\n\n1\n\n6\n\nRADIOGRAFIA DE CADERA AP-AXIAL\n\n0\n\n0\n\n2\n\nImágenes Dicom\n\nSeleccionar DICOMS\n\nSCL3-D (57ms)\n\nEscribir informe\nNo hay plantillas para esta prestación\nMás plantillas\n\nTítulo\n\nRADIOGRAFIA DE CADERA AP-AXIAL\n\nPosibilidad de otra(s) palabra(s) dictadas.\n\nPor favor, revisar antes de finalizar.\n\nTexto reemplazado automaticamente.\n\nAntecedentes\n\n\n\n\nHallazgos\n\nProstata\n\nImpresión\n\n\n\n\nOpciones adicionales\n\nEliminar informe\nEstudio sin patología critica\nDIAGNOSTICAR ESTUDIO",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio no especifica una zona anatómica, pero el informe redactado se enfoca en la próstata, lo que puede no ser relevante para el diagnóstico solicitado"
+    ],
+    "fecha": "2026-08-08T02:34:13.570Z"
+  },
+  {
+    "estudio": "PRUEBA PRUEBA NO TOMAR EN CUENTA\n\n11.111.111-1\n\nVer más\n\nAPSORAD – CM APSORAD\n\nINGRESO\n\n07/08/2026\n\n11:59\n\nENTREGA\n\n11/08/2026\n\n17:00\n\n1\n\n6\n\nRADIOGRAFIA DE CADERA AP-AXIAL\n\n0\n\n0\n\n2\n\nImágenes Dicom\n\nSeleccionar DICOMS\n\nSCL3-D (57ms)\n\nEscribir informe\nNo hay plantillas para esta prestación\nMás plantillas\n\nTítulo\n\nRADIOGRAFIA DE CADERA AP-AXIAL\n\nPosibilidad de otra(s) palabra(s) dictadas.\n\nPor favor, revisar antes de finalizar.\n\nTexto reemplazado automaticamente.\n\nAntecedentes\n\n\n\n\nHallazgos\n\nProstata\n\nImpresión\n\n\n\n\nOpciones adicionales\n\nEliminar informe\nEstudio sin patología critica\nDIAGNOSTICAR ESTUDIO",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio requiere evaluar la cadera, pero el informe redactado se enfoca en la próstata",
+      "Alerta de omisión de regiones requeridas: El título del estudio requiere evaluar la cadera, pero el informe redactado no menciona esta zona"
+    ],
+    "fecha": "2026-08-08T02:34:13.702Z"
+  },
+  {
+    "estudio": "Información del paciente",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio requiere evaluar la zona de la cadera, pero el informe redactado se enfoca en la próstata",
+      "Alerta de omisión de regiones requeridas: El título del estudio requiere evaluar la cadera, pero el informe redactado no menciona esta zona",
+      "INCONGRUENCIA DE SEXO: Términos masculinos (Próstata/Testículo) en paciente femenina."
+    ],
+    "fecha": "2026-08-08T02:34:16.344Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en la 'Próstata'"
+    ],
+    "fecha": "2026-08-08T02:37:41.865Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en la 'Próstata'"
+    ],
+    "fecha": "2026-08-08T02:37:41.868Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en la 'Próstata'"
+    ],
+    "fecha": "2026-08-08T02:38:10.075Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en la 'Próstata'"
+    ],
+    "fecha": "2026-08-08T02:38:10.299Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en la 'Próstata'"
+    ],
+    "fecha": "2026-08-08T02:38:21.991Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en la 'Próstata'"
+    ],
+    "fecha": "2026-08-08T02:38:22.284Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en la 'Próstata'"
+    ],
+    "fecha": "2026-08-08T02:44:02.566Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en la 'Próstata'"
+    ],
+    "fecha": "2026-08-08T02:44:02.568Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en la 'Próstata'"
+    ],
+    "fecha": "2026-08-08T02:44:03.038Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en la 'Prostata'"
+    ],
+    "fecha": "2026-08-08T02:44:25.945Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en la 'Prostata'"
+    ],
+    "fecha": "2026-08-08T02:44:25.982Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en la 'Prostata'"
+    ],
+    "fecha": "2026-08-08T02:44:38.564Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en la 'Prostata'"
+    ],
+    "fecha": "2026-08-08T02:44:38.664Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en 'Próstata'"
+    ],
+    "fecha": "2026-08-08T02:45:14.002Z"
+  },
+  {
+    "estudio": "Verificando conexión a PACS...\n\nPRUEBA PRUEBA NO TOMAR EN CUENTA\n\n11.111.111-1\n\nVer más\n\nAPSORAD – CM APSORAD\n\nINGRESO\n\n07/08/2026\n\n11:59\n\nENTREGA\n\n11/08/2026\n\n17:00\n\n1\n\n6\n\nRADIOGRAFIA DE CADERA AP-AXIAL\n\n0\n\n0\n\n2\n\nImágenes Dicom\n\nSeleccionar DICOMS\n\nSCL3-D (36ms)\n\nEscribir informe\nNo hay plantillas para esta prestación\nMás plantillas\n\nTítulo\n\nRADIOGRAFIA DE CADERA AP-AXIAL\n\nPosibilidad de otra(s) palabra(s) dictadas.\n\nPor favor, revisar antes de finalizar.\n\nTexto reemplazado automaticamente.\n\nAntecedentes\n\n\n\n\nHallazgos\n\nProstata\n\nImpresión\n\n\n\n\nOpciones adicionales\n\nEliminar informe\nEstudio sin patología critica\nDIAGNOSTICAR ESTUDIO",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en la 'Próstata'"
+    ],
+    "fecha": "2026-08-08T02:46:45.819Z"
+  },
+  {
+    "estudio": "Verificando conexión a PACS...\n\nPRUEBA PRUEBA NO TOMAR EN CUENTA\n\n11.111.111-1\n\nVer más\n\nAPSORAD – CM APSORAD\n\nINGRESO\n\n07/08/2026\n\n11:59\n\nENTREGA\n\n11/08/2026\n\n17:00\n\n1\n\n6\n\nRADIOGRAFIA DE CADERA AP-AXIAL\n\n0\n\n0\n\n2\n\nImágenes Dicom\n\nSeleccionar DICOMS\n\nSCL3-D (36ms)\n\nEscribir informe\nNo hay plantillas para esta prestación\nMás plantillas\n\nTítulo\n\nRADIOGRAFIA DE CADERA AP-AXIAL\n\nPosibilidad de otra(s) palabra(s) dictadas.\n\nPor favor, revisar antes de finalizar.\n\nTexto reemplazado automaticamente.\n\nAntecedentes\n\n\n\n\nHallazgos\n\nProstata\n\nImpresión\n\n\n\n\nOpciones adicionales\n\nEliminar informe\nEstudio sin patología critica\nDIAGNOSTICAR ESTUDIO",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en la 'Próstata'"
+    ],
+    "fecha": "2026-08-08T02:46:46.325Z"
+  },
+  {
+    "estudio": "PRUEBA PRUEBA NO TOMAR EN CUENTA\n\n11.111.111-1\n\nVer más\n\nAPSORAD – CM APSORAD\n\nINGRESO\n\n07/08/2026\n\n11:59\n\nENTREGA\n\n11/08/2026\n\n17:00\n\n1\n\n6\n\nRADIOGRAFIA DE CADERA AP-AXIAL\n\n0\n\n0\n\n2\n\nImágenes Dicom\n\nSeleccionar DICOMS\n\nSCL3-D (36ms)\n\nEscribir informe\nNo hay plantillas para esta prestación\nMás plantillas\n\nTítulo\n\nRADIOGRAFIA DE CADERA AP-AXIAL\n\nPosibilidad de otra(s) palabra(s) dictadas.\n\nPor favor, revisar antes de finalizar.\n\nTexto reemplazado automaticamente.\n\nAntecedentes\n\n\n\n\nHallazgos\n\nProstata\n\nImpresión\n\n\n\n\nOpciones adicionales\n\nEliminar informe\nEstudio sin patología critica\nDIAGNOSTICAR ESTUDIO",
+    "alertas": [
+      "Incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en la 'Próstata'"
+    ],
+    "fecha": "2026-08-08T02:46:47.269Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en la 'Próstata'"
+    ],
+    "fecha": "2026-08-08T02:46:54.022Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en la 'Prostata'"
+    ],
+    "fecha": "2026-08-08T02:49:28.372Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en la 'Prostata'"
+    ],
+    "fecha": "2026-08-08T02:49:28.375Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en la 'Próstata'"
+    ],
+    "fecha": "2026-08-08T02:49:40.579Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en la 'Próstata'"
+    ],
+    "fecha": "2026-08-08T02:49:40.721Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en la 'Próstata'"
+    ],
+    "fecha": "2026-08-08T02:52:20.185Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en la 'Próstata'"
+    ],
+    "fecha": "2026-08-08T02:52:20.336Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "No se encontró congruencia entre el título del estudio 'RADIOGRAFIA DE CADERA AP-AXIAL' y el informe redactado que se enfoca en 'Prostata', lo que indica una incongruencia anatómica."
+    ],
+    "fecha": "2026-08-08T03:03:04.949Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "No se encontró congruencia entre el título del estudio 'RADIOGRAFIA DE CADERA AP-AXIAL' y el informe redactado que se enfoca en 'Prostata', lo que indica una incongruencia anatómica."
+    ],
+    "fecha": "2026-08-08T03:03:04.994Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en 'Prostata'"
+    ],
+    "fecha": "2026-08-08T03:03:20.932Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en 'Prostata'"
+    ],
+    "fecha": "2026-08-08T03:03:21.081Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en la 'Próstata'"
+    ],
+    "fecha": "2026-08-08T03:04:25.577Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en la 'Próstata'"
+    ],
+    "fecha": "2026-08-08T03:04:25.583Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en 'Prostata'"
+    ],
+    "fecha": "2026-08-08T04:03:03.697Z"
+  },
+  {
+    "estudio": "Diagnóstico de estudio | Dalca",
+    "alertas": [
+      "Alerta de incongruencia anatómica: El título del estudio es 'RADIOGRAFIA DE CADERA AP-AXIAL' pero el informe se enfoca en 'Prostata'"
+    ],
+    "fecha": "2026-08-08T04:03:03.800Z"
+  }
+]

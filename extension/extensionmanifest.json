@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "RadAssist Connector",
+  "version": "1.0",
+  "description": "Inyector de informes directo para Dalca y RIS/PACS Web",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

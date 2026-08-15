@@ -1,0 +1,239 @@
+{
+"esteatosis hepatica": [
+"Cambios compatibles con infiltración grasa hepática.",
+"Compatible con esteatosis hepática.",
+"Aumento difuso de ecogenicidad hepática.",
+"Sin lesiones focales evidentes."
+],
+
+"hepatomegalia": [
+"Aumento del tamaño hepático.",
+"Hepatomegalia difusa.",
+"Correlacionar con pruebas de función hepática.",
+"Sin lesiones focales evidentes."
+],
+
+"cirrosis": [
+"Cambios morfológicos compatibles con hepatopatía crónica.",
+"Superficie hepática irregular.",
+"Compatible con cirrosis hepática.",
+"Correlacionar con antecedentes clínicos."
+],
+
+"quiste hepatico": [
+"Lesión quística simple hepática.",
+"Hallazgo de apariencia benigna.",
+"Sin elementos ecográficos complejos.",
+"No requiere seguimiento específico."
+],
+
+"hemangioma": [
+"Lesión focal compatible con hemangioma.",
+"Hallazgo benigno frecuente.",
+"Correlacionar con estudios previos.",
+"Considerar caracterización adicional según contexto clínico."
+],
+
+"lesion hepatica": [
+"Lesión focal hepática de características inespecíficas.",
+"No es posible caracterización completa en este estudio.",
+"Se recomienda estudio complementario.",
+"Correlacionar con antecedentes clínicos."
+],
+
+"colelitiasis": [
+"Litiasis vesicular.",
+"Presencia de cálculos vesiculares.",
+"Sin signos ecográficos de colecistitis aguda.",
+"Pared vesicular conservada."
+],
+
+"colecistitis": [
+"Hallazgos compatibles con colecistitis.",
+"Engrosamiento parietal vesicular.",
+"Correlacionar con parámetros inflamatorios.",
+"Compatible con proceso inflamatorio agudo."
+],
+
+"barro biliar": [
+"Contenido ecogénico dependiente compatible con barro biliar.",
+"Sin evidencia de sombra acústica posterior.",
+"Hallazgo inespecífico.",
+"Correlacionar con contexto clínico."
+],
+
+"colangitis": [
+"Dilatación de la vía biliar.",
+"Hallazgos sugerentes de colangitis.",
+"Correlacionar con parámetros inflamatorios.",
+"Evaluación clínica recomendada."
+],
+
+"coledocolitiasis": [
+"Litiasis en la vía biliar principal.",
+"Dilatación de la vía biliar.",
+"Compatible con coledocolitiasis.",
+"Correlacionar con laboratorio."
+],
+
+"pancreatitis": [
+"Cambios inflamatorios pancreáticos.",
+"Hallazgos compatibles con pancreatitis.",
+"Correlacionar con niveles de amilasa y lipasa.",
+"Compatible con proceso inflamatorio agudo."
+],
+
+"quiste pancreatico": [
+"Lesión quística pancreática.",
+"Hallazgo que requiere caracterización.",
+"Correlacionar con estudios previos.",
+"Se recomienda seguimiento."
+],
+
+"esplenomegalia": [
+"Aumento del tamaño esplénico.",
+"Esplenomegalia.",
+"Correlacionar con antecedentes clínicos.",
+"Sin lesiones focales evidentes."
+],
+
+"quiste renal": [
+"Quiste renal simple.",
+"Hallazgo benigno frecuente.",
+"Sin características complejas.",
+"No requiere seguimiento específico."
+],
+
+"litiasis renal": [
+"Litiasis renal.",
+"Cálculo renal.",
+"Correlacionar con clínica de cólico renal.",
+"Sin evidencia de complicaciones."
+],
+
+"hidronefrosis": [
+"Dilatación pielocalicial.",
+"Compatible con hidronefrosis.",
+"Valorar etiología obstructiva.",
+"Correlacionar con contexto clínico."
+],
+
+"masa renal": [
+"Lesión renal sólida.",
+"Hallazgo que requiere caracterización.",
+"Compatible con masa renal.",
+"Se recomienda estudio contrastado."
+],
+
+"apendicitis": [
+"Hallazgos compatibles con apendicitis aguda.",
+"Estructura tubular no compresible.",
+"Cambios inflamatorios regionales.",
+"Correlación clínica inmediata."
+],
+
+"diverticulitis": [
+"Cambios inflamatorios pericolónicos.",
+"Hallazgos compatibles con diverticulitis.",
+"Correlacionar con cuadro clínico.",
+"Compatible con proceso inflamatorio."
+],
+
+"obstruccion intestinal": [
+"Asas intestinales dilatadas.",
+"Hallazgos compatibles con obstrucción intestinal.",
+"Valorar conducta quirúrgica.",
+"Correlación clínica inmediata."
+],
+
+"hernia": [
+"Defecto parietal compatible con hernia.",
+"Contenido herniario identificable.",
+"Correlacionar con examen físico.",
+"Sin signos evidentes de complicación."
+],
+
+"ascitis": [
+"Líquido libre intraperitoneal.",
+"Ascitis de cuantía leve.",
+"Ascitis de cuantía moderada.",
+"Correlacionar con antecedentes clínicos."
+],
+
+"neumoperitoneo": [
+"Aire libre intraperitoneal.",
+"Hallazgo compatible con neumoperitoneo.",
+"Evaluación quirúrgica urgente.",
+"Correlación clínica inmediata."
+],
+
+"adenopatias": [
+"Adenopatías abdominales.",
+"Ganglios aumentados de tamaño.",
+"Hallazgo inespecífico.",
+"Correlacionar con antecedentes clínicos."
+],
+
+"metastasis hepatica": [
+"Lesiones focales secundarias hepáticas.",
+"Compatible con enfermedad metastásica.",
+"Correlacionar con antecedentes oncológicos.",
+"Requiere caracterización adicional."
+],
+
+"carcinomatosis": [
+"Implantes peritoneales.",
+"Hallazgos compatibles con carcinomatosis.",
+"Ascitis asociada.",
+"Correlacionar con antecedentes oncológicos."
+],
+
+"engrosamiento colonico": [
+"Engrosamiento parietal colónico.",
+"Hallazgo inespecífico.",
+"Compatible con proceso inflamatorio.",
+"Correlacionar con contexto clínico."
+],
+
+"engrosamiento gastrico": [
+"Engrosamiento de pared gástrica.",
+"Hallazgo inespecífico.",
+"Correlacionar con síntomas digestivos.",
+"Considerar evaluación endoscópica."
+],
+
+"ileo": [
+"Distensión de asas intestinales.",
+"Compatible con íleo.",
+"Sin evidencia clara de punto obstructivo.",
+"Correlacionar con evolución clínica."
+],
+
+"absceso": [
+"Colección compatible con absceso.",
+"Contenido heterogéneo.",
+"Correlacionar con parámetros inflamatorios.",
+"Compatible con proceso infeccioso."
+],
+
+"hematoma": [
+"Colección compatible con hematoma.",
+"Correlacionar con antecedente traumático.",
+"Hallazgo potencialmente significativo.",
+"Control evolutivo según contexto clínico."
+],
+
+"infarto esplenico": [
+"Área hipodensa compatible con infarto esplénico.",
+"Correlacionar con antecedentes vasculares.",
+"Hallazgo significativo.",
+"Evaluación clínica recomendada."
+],
+
+"infarto renal": [
+"Área hipoperfundida renal.",
+"Compatible con infarto renal.",
+"Correlacionar con antecedentes vasculares.",
+"Evaluación clínica recomendada."
+]
+}

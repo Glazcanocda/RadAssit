@@ -1,0 +1,61 @@
+{
+  "sin hall": [
+    "Sin hallazgos patológicos evidentes.",
+    "Sin alteraciones significativas.",
+    "Sin evidencia de lesión focal."
+  ],
+
+  "normal": [
+    "Estudio dentro de límites normales.",
+    "Sin alteraciones relevantes.",
+    "Examen sin hallazgos patológicos."
+  ],
+
+  "control": [
+    "Se sugiere control evolutivo.",
+    "Comparar con estudios previos.",
+    "Seguimiento clínico recomendado."
+  ],
+
+  "litiasis": [
+    "Se identifican cálculos compatibles con litiasis.",
+    "Litiasis sin signos inflamatorios asociados.",
+    "Hallazgos compatibles con nefrolitiasis."
+  ],
+
+  "derrame": [
+    "Pequeño derrame pleural bilateral.",
+    "Sin evidencia de derrame pleural.",
+    "Derrame pleural de moderada cuantía."
+  ],
+
+  "nodulo": [
+    "Nódulo sólido de bordes definidos.",
+    "Micronódulo pulmonar subpleural.",
+    "Nódulo sin características sospechosas."
+  ],
+
+  "fractura": [
+    "Trazo de fractura sin desplazamiento.",
+    "No se identifican fracturas agudas.",
+    "Fractura con signos de consolidación."
+  ],
+
+  "hernia": [
+    "Hernia discal posterocentral.",
+    "Protrusión discal leve.",
+    "Sin compresión radicular significativa."
+  ],
+
+  "inflamacion": [
+    "Cambios inflamatorios adyacentes.",
+    "Signos de inflamación activa.",
+    "Sin evidencia de inflamación."
+  ],
+
+  "tumor": [
+    "Lesión de aspecto tumoral.",
+    "Masa sólida en evaluación.",
+    "Hallazgos sugerentes de neoplasia."
+  ]
+}

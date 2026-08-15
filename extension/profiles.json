@@ -1,0 +1,17 @@
+{
+  "radiologo": {
+    "phrases": true,
+    "autocomplete": true,
+    "criticalFindings": true,
+    "grammar": true,
+    "punctuation": true
+  },
+
+  "operador": {
+    "phrases": false,
+    "autocomplete": false,
+    "criticalFindings": true,
+    "grammar": true,
+    "punctuation": true
+  }
+}
